@@ -64,3 +64,17 @@
 //     { id: 4, price: 10 },
 //   ]),
 // );
+
+
+
+// 5.) Find all the posts by a single user 
+
+// call this API "https://jsonplaceholder.typicode.com/posts" and return all the posts by any given user
+
+function postsByUser(userId) {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(res => console.log(res))
+    console.log(userId)
+}
+
+postsByUser(4);
